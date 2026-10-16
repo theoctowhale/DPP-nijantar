@@ -1,0 +1,30 @@
+<!DOCTYPE html>  <!-- ต้องอยู่บรรทัดแรกสุดเสมอ -->
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าเว็บของฉัน</title>
+     <style>
+        /* สั่งให้กล่องที่ครอบรูปภาพจัดเรียงในแนวนอน */
+        .image-row {
+            display: flex;       /* เปิดใช้งาน Flexbox */
+            gap: 15px;          /* เว้นระยะห่างระหว่างรูปภาพ 15 พิกเซล */
+            margin-top: 10px;   /* เว้นระยะห่างจากข้อความ h1 ด้านบน */
+        }
+
+        /* จำกัดขนาดรูปภาพไม่ให้ใหญ่เกินไปและเท่ากัน */
+        .image-row img {
+            width: 300px;       /* กำหนดความกว้างของรูปภาพ (ปรับเปลี่ยนได้) */
+            height: auto;       /* ปรับความสูงอัตโนมัติเพื่อไม่ให้รูปเบี้ยว */
+            object-fit: cover;  /* ตัดสัดส่วนรูปภาพให้สวยงามพอดีกับกรอบ */
+        }
+    </style>
+</head>
+<body>
+    <h1>Piscine Web</h1>
+     <div class="image-row">
+        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2023/08/I-found-the-10-funniest-LOLcat-MEMEs-64dbafe2175af__605.jpg" alt="รูปภาพที่ 1">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Eva_and_Franco_Mattes%2C_Ceiling_Cat.jpg/1920px-Eva_and_Franco_Mattes%2C_Ceiling_Cat.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="รูปภาพที่ 2">
+    </div>
+    
+</body>
+</html>
